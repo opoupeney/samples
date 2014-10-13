@@ -1,0 +1,20 @@
+{
+	"_id": "53dfcdff05f87e0c42ba254e",
+	"credentials": {
+		"login": "admin",
+		"pass": "U2FsdGVkX18zKFWzRYsdXtlIdZwZpsV1eN2S+9VNM+8zJRbjf+rVtjnxA5+9q3E9H77GKxeERveNEaagy6bhByTuXFePcsubHyRX3pxl4+v38eAcsL6bn3V/kBky/NOk"
+	},
+	"roles": {
+		"list": [
+			"admin"
+		],
+		"default": "admin"
+	},
+	"email": "",
+	"name": {
+		"last": "",
+		"first": ""
+	},
+	"type": "staff",
+	"access_token": "d69aa093dda87a8e0f559e4f91f372a5cbc45733"
+}

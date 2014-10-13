@@ -1,0 +1,19 @@
+{
+	"_id": "53eb1b054ffefcaf02dea651",
+	"credentials": {
+		"login": "muser",
+		"pass": "U2FsdGVkX1+uVxaNQ43nXpXLz1mhZxYVfR0fXUV76Sd5pUg8Sui/qqHifRML5yHunk/H6j8A+AMIMjohIkJ1MbjOpj8q1W2yluDzzLp4OlQvF0VGw4/bRex2KwhOW+17"
+	},
+	"roles": {
+		"list": [
+			"user"
+		],
+		"default": "user"
+	},
+	"email": "john.smith@acme.com",
+	"name": {
+		"last": "Smith",
+		"first": "John"
+	},
+	"type": ""
+}
