@@ -1,0 +1,62 @@
+{
+	"_id": "54350b66bbe0095a0eb4468a",
+	"selector": ":root",
+	"update_comment": "",
+	"ownerId": "",
+	"persistence": "none",
+	"settings": {
+		"postrequestbody": "",
+		"authentication": "none",
+		"auth_password": "",
+		"typerequest": "HTTP_POST",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://www.webservicex.net/globalweather.asmx?WSDL",
+		"dbdriver": "",
+		"dbnames": {
+			"database": "",
+			"collection": ""
+		},
+		"soap": {
+			"soapAction": "http://www.webserviceX.NET/GetWeather",
+			"url": "http://www.webservicex.net/globalweather.asmx",
+			"operation": "GetWeather",
+			"ns": "http://www.webserviceX.NET",
+			"params": "<CityName>Boston</CityName><CountryName>United States</CountryName>",
+			"paramsJson": "{\"CityName\":\"Boston\",\"CountryName\":\"United States\"}"
+		}
+	},
+	"appexpr": [],
+	"format": "json",
+	"dependency": "",
+	"category": "samples",
+	"description": "Weather Forecast",
+	"name": "qWeather",
+	"connector": "http",
+	"requestDate": "2014-10-09T15:27:09.540Z",
+	"parameters": [],
+	"metadata": "{\"name\":\"root\",\"type\":\"root\",\"children\":{\"Location\":{\"name\":\"Location\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Location\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Location\"},\"styles\":{}}]},\"children\":{}},\"Time\":{\"name\":\"Time\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Time\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Time\"},\"styles\":{}}]},\"children\":{}},\"Wind\":{\"name\":\"Wind\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Wind\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Wind\"},\"styles\":{}}]},\"children\":{}},\"Visibility\":{\"name\":\"Visibility\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Visibility\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Visibility\"},\"styles\":{}}]},\"children\":{}},\"SkyConditions\":{\"name\":\"SkyConditions\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"SkyConditions\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"SkyConditions\"},\"styles\":{}}]},\"children\":{}},\"Temperature\":{\"name\":\"Temperature\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Temperature\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Temperature\"},\"styles\":{}}]},\"children\":{}},\"DewPoint\":{\"name\":\"DewPoint\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"DewPoint\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"DewPoint\"},\"styles\":{}}]},\"children\":{}},\"RelativeHumidity\":{\"name\":\"RelativeHumidity\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"RelativeHumidity\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"RelativeHumidity\"},\"styles\":{}}]},\"children\":{}},\"Pressure\":{\"name\":\"Pressure\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Pressure\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Pressure\"},\"styles\":{}}]},\"children\":{}},\"PressureTendency\":{\"name\":\"PressureTendency\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"PressureTendency\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"PressureTendency\"},\"styles\":{}}]},\"children\":{}},\"Status\":{\"name\":\"Status\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Status\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"Status\"},\"styles\":{}}]},\"children\":{}}}}",
+	"source": "soap",
+	"visibility": "visible",
+	"lock": {
+		"status": "unlocked"
+	},
+	"precode": [],
+	"postcode": [
+		{
+			"name": "filter",
+			"code": "response = response[\"soap:Envelope\"][\"soap:Body\"][0]['GetWeatherResponse'][0]['GetWeatherResult'][0]['CurrentWeather'][0];\nterminateFilter();"
+		}
+	],
+	"service": {
+		"name": "",
+		"method": ""
+	},
+	"versioning": {
+		"samples": {
+			"last_action": "1413208127",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}

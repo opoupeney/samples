@@ -1,0 +1,53 @@
+{
+	"_id": "541c1436bae1be0000050c53",
+	"selector": ":root",
+	"update_comment": "",
+	"ownerId": "",
+	"persistence": "none",
+	"settings": {
+		"postrequestbody": {
+			"database": "sample",
+			"collection": "customers",
+			"document": {
+				"id": "",
+				"name": "",
+				"city": ""
+			}
+		},
+		"authentication": "none",
+		"auth_password": "",
+		"typerequest": "HTTP_POST",
+		"urlrandom": "0",
+		"auth_userid": "",
+		"url": "http://localhost:3000/database/put",
+		"dbdriver": "mongodb"
+	},
+	"appexpr": [],
+	"format": "json",
+	"dependency": "",
+	"category": "samples",
+	"description": "Add a new customer",
+	"name": "qCustomersAdd",
+	"connector": "http",
+	"requestDate": "2014-09-19T13:50:24.104Z",
+	"parameters": [],
+	"metadata": "{\"name\":\"root\",\"type\":\"root\",\"children\":{\"data\":{\"name\":\"data\",\"type\":\"String\",\"options\":{\"properties\":{},\"gcontrols\":[{\"name\":\"SimpleText\",\"perspective\":\"Default\",\"type\":\"TextField\",\"attributes\":{\"label\":\"data\"},\"styles\":{}},{\"name\":\"SimpleEdit\",\"perspective\":\"Edit\",\"type\":\"TextField\",\"attributes\":{\"label\":\"data\"},\"styles\":{}}]},\"children\":{}}}}",
+	"source": "db",
+	"visibility": "visible",
+	"lock": {
+		"status": "unlocked"
+	},
+	"precode": [],
+	"postcode": [],
+	"service": {
+		"name": "Customer",
+		"method": "create"
+	},
+	"versioning": {
+		"samples": {
+			"last_action": "1413208127",
+			"status": "committed",
+			"user": "admin"
+		}
+	}
+}
