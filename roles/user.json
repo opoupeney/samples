@@ -1,0 +1,14 @@
+{
+	"_id": "53eb1b0c4ffefcaf02dea652",
+	"name": "user",
+	"rights": [
+		"DATAQUERY::qCustomers",
+		"DATAQUERY::qCustomersAdd",
+		"DATAQUERY::qPersons",
+		"DATAQUERY::qTravel",
+		"DATAQUERY::qTwitter",
+		"DATAQUERY::qWeather"
+	],
+	"type": "",
+	"description": "application user"
+}
