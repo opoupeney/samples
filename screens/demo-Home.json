@@ -1,0 +1,39 @@
+{
+	"_id": "53e93afa4ffefcaf02dea649",
+	"title": "Home",
+	"name": "Home",
+	"requestDate": "2014-10-12T22:29:17.227Z",
+	"ownerId": "Olivier",
+	"application": "demo",
+	"visibility": "visible",
+	"layout": {
+		"fixedlayout": "no",
+		"widgetspacing": "yes",
+		"width": "100%",
+		"backgroundcolor": "white",
+		"rows": [
+			{
+				"columns": [
+					{
+						"width": "12",
+						"widgets": [
+							{
+								"name": "wTravel"
+							}
+						]
+					}
+				],
+				"id": ""
+			}
+		]
+	},
+	"parentname": null,
+	"versioning": {
+		"samples": {
+			"last_action": "1413208065",
+			"status": "committed",
+			"user": "admin"
+		}
+	},
+	"app_menu_title": ""
+}
